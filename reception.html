@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réception Javachrist</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/icone/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reception.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-left">
+            <img src="/assets/icone/favicon.ico" alt="Mon logo javachrist" class="logo-javachrist">
+            <ul class="menu-left">
+                <li>
+                    <a href="#"><i class="bx bx-menu icon" id="hamburger" onclick="openModal()"></i></a>
+                    <div class="modal-container">
+                        <div class="modal-overlay" onclick="closeModal()">
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <h2>Apps</h2>
+                                    <span class="close">&times;</span>
+                                    <div class="modal-icons">
+                                        <a href="/index.html" class="modal-link home"><i
+                                                class="bx bx-home icon"></i>Menu</a>
+                                        <a href="/reception.html" class="modal-link email"><i
+                                                class="bx bx-envelope icon"></i>Courrier</a>
+                                        <a href="/calendrier.html" class="modal-link calendar"><i
+                                                class="bx bx-calendar icon"></i>Calendrier</a>
+                                        <a href="/contact.html" class="modal-link contact"><i
+                                                class="bx bx-user icon"></i>Carnet d'adresses</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/index.html"><i class="bx bx-home icon"></i></a></li>
+                <li><a href="/reception.html"><i class="bx bx-envelope icon"></i></a></li>
+                <li><a href="/calendrier.html"><i class="bx bx-calendar icon"></i></a></li>
+                <li><a href="/contact.html"><i class="bx bx-user icon"></i></a></li>
+            </ul>
+        </div>
+        <div class="nav-middle">
+            <input type="text" placeholder="Rechercher..."> <i class="bx bx-search"></i>
+        </div>
+        <div class="nav-right">
+            <ul class="menu-right">
+                <li><a href="#"><i class="bx bx-bell icon"></i></a></li>
+                <li><a href="#"><i class="bx bx-loader icon"></i></a></li>
+                <li><a href="#"><i class="bx bx-cog icon"></i></a></li>
+                <li><a href="#"><i class="bx bx-log-out icon"></i></a></li>
+            </ul>
+            <img src="/assets/image/Christian_sans_font-cercle.png" alt="Ma photo" class="photo-login">
+        </div>
+    </header>
+
+    <main class="reception-container">
+        <div class="left-column">
+            <button id="newEmailBtn">Nouveau courriel</button>
+            <div class="folders">
+                <ul>
+                    <li><a href="#">Boîte de réception</a></li>
+                    <li><a href="#">À conserver</a></li>
+                    <li><a href="#">Batterie</a></li>
+                    <!-- Ajoutez d'autres dossiers ici -->
+                </ul>
+            </div>
+            <div class="labels">
+                <ul>
+                    <li><a href="#">Fortuneo</a></li>
+                    <li><a href="#">France Travail</a></li>
+                    <!-- Ajoutez d'autres libellés ici -->
+                </ul>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="email-list">
+                <!-- Les e-mails seront ajoutés dynamiquement ici -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal pour écrire un nouveau courriel -->
+    <div id="newEmailModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Nouveau courriel</h2>
+            <form>
+                <label for="to">À :</label>
+                <input type="email" id="to" name="to" required>
+
+                <label for="subject">Objet :</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="reception.js"></script>
+</body>
+
+</html>

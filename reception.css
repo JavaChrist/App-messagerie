@@ -1,0 +1,118 @@
+.reception-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 5px;
+  padding: 5px;
+  height: 100vh;
+}
+
+.left-column {
+  background-color: #c6f2f3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.right-column {
+  background-color: #e4e2e2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#newEmailBtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.folders ul,
+.labels ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.folders ul li,
+.labels ul li {
+  margin-bottom: 10px;
+}
+
+.folders ul li a,
+.labels ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.email-list {
+  font-size: 16px;
+}
+
+.email-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.email-item:last-child {
+  border-bottom: none;
+}
+
+.email-item .sender {
+  font-weight: bold;
+}
+
+.email-item .subject {
+  margin-left: 10px;
+}
+
+.email-item .preview {
+  color: #888;
+  margin-left: 10px;
+}
+
+.email-item .time {
+  color: #888;
+  font-size: 12px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
